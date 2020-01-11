@@ -95,7 +95,6 @@ try {
 let contact=await Contact.findById(req.params.id);
 if(!contact) return res.status(404).json({msg:"contact dosent exist"});
 
-
     await Contact.findByIdAndRemove(req.params.id);
     res.json({msg:"contact removed"});
 
