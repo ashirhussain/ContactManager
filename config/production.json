@@ -1,0 +1,4 @@
+{
+	"mongoURI":"mongodb+srv://ashir:12345@contactmanager-jsnqm.mongodb.net/test?retryWrites=true&w=majority",
+	"jwtSecret":"qwerty"
+}     
