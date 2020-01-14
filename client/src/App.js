@@ -1,5 +1,7 @@
 import React ,{Fragment} from 'react';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import { CSSTransition,TransitionGroup } from 'react-transition-group';
+
 // import logo from './logo.svg';
 import Navbar from './components/layout/Navbar';
 import Alert from './components/layout/Alert';
@@ -26,7 +28,20 @@ function App() {
     <Fragment>
     <Navbar/>
     <div className="container">
+    <TransitionGroup>
+    <CSSTransition
+        // in={showMessage}
+        timeout={500}
+        classNames="item"
+        // unmountOnExit
+        // onEnter={() => setShowButton(false)}
+        // onExited={() => setShowButton(true)}
+      >
     <Alert/>
+
+    </CSSTransition>
+    </TransitionGroup>
+
      <Switch>
       <Privateroute exact path='/' component={Home}/>
       <Route exact path='/about' component={About}/>

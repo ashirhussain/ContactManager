@@ -3,6 +3,8 @@ import Contactitems from './Contactitems';
 // import Contactfilter from './Contactfilter';
 import contactContext from '../../context/contact/contactContext';
 // import authContext from '../../context/auth/authContext';
+// import { CSSTransition,TransitionGroup } from 'react-transition-group';
+
 
 import Spinner from '../layout/Spinner';
 
@@ -26,8 +28,14 @@ console.log('useEffect called')
 		<Fragment>
 		{	contacts!==null && !loading ?
 		 (
-	filtered!==null ? filtered.map(contact=>(<Contactitems key={contact._id} contact={contact}/>)) :
-	contacts.map(contact=>(<Contactitems key={contact._id} contact={contact}/>))
+	filtered!==null ? 
+	filtered.map(contact=>(
+	
+	<Contactitems key={contact._id} contact={contact}/>
+	)) :
+	contacts.map(contact=>(
+	<Contactitems key={contact._id} contact={contact}/>
+	))
 		 )
 	:
 <Spinner/>

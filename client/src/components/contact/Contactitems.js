@@ -13,8 +13,8 @@ const contactContext=useContext(ContactContext);
 
 
 	return (
-		<div className="card bg-light">
-			<h3 className="text-primary text-left">
+		<div className="card">
+			<h3 className="text-new text-left">
 			{name}
 			<span
 			className='badge badge-dark'
@@ -23,7 +23,7 @@ const contactContext=useContext(ContactContext);
 				</span>
 			
 			</h3>
-			<ul className='list'>
+			<ul className='list ph-em'>
 {email && (<li> <i className='fas fa-envelope-open' >{' '}{email}</i></li>)}
 {phone && (<li> <i className='fas fa-phone' >{' '}{phone}</i></li>)}
 			</ul>

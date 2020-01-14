@@ -73,6 +73,10 @@ img {
 .text-primary {
   color: var(--primary-color);
 }
+.text-new{
+  color:rgb(24, 14, 116);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 .text-dark {
   color: var(--dark-color);
@@ -93,13 +97,21 @@ img {
 /* Cards */
 .card {
   padding: 1rem;
-  border: #ccc 1px dotted;
+  border:1px solid rgb(153, 147, 147) ;
   margin: 0.7rem 0;
+  text-transform: capitalize;
+  border-radius: 3px;
+  background-color: rgb(250, 248, 248);
+  
 }
 
 /* List */
 .list {
   margin: 0.5rem 0;
+}
+.ph-em{
+  font-size:15px;
+  
 }
 
 .list li {
@@ -182,6 +194,10 @@ img {
   grid-template-columns: 2fr 3fr;
   grid-gap: 2rem;
 }
+.grid-row{
+display: grid;
+grid-template-rows: 0fr 0fr
+}
 
 .btn {
   display: inline-block;
@@ -194,6 +210,7 @@ img {
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
   outline: none;
+  text-transform: capitalize;
 }
 
 .btn-link {
@@ -220,6 +237,8 @@ img {
   margin: 0.3rem;
   background: var(--light-color);
   color: #333;
+
+  /* border:1px solid rgb(46, 44, 44); */
   border-radius: 5px;
 }
 
@@ -244,7 +263,7 @@ img {
 .badge-light,
 .alert-light {
   background: var(--light-color);
-  color: #333;
+  color: rgb(44, 43, 43);
 }
 
 .btn-dark,
@@ -342,6 +361,7 @@ h2,
 h3 {
   text-align: center;
 }
+
 
 table th,
 table td {

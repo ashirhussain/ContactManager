@@ -11,10 +11,15 @@ const Home = () => {
 		authcontext.loaduser();
 	},[]);
 	return (
-		<div className="grid-2">
-		<Contactform/ >
+		<div className='grid-2'>
+		<Contactform/>
+
+		<div className='grid-row'>
 		<Contactfilter/>
+
 			<Contacts/>
+		</div>
+		
 		</div>
 	)
 }
